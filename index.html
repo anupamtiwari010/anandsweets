@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Anand Sweets & Restaurant</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+  <nav class="navbar">
+    <a href="index.html" class="brand">
+      <img src="images/logo.png" alt="Anand Sweets Logo">
+      
+    </a>
+
+    <div class="menu-toggle" id="menuToggle">
+      ☰
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#menu">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="index.html#testimonials">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="hero-content">
+    <h1>Welcome to<br>Anand Sweets & Restaurant </h1>
+    <p>Fresh • Tasty • Hygienic</p>
+    <button onclick="scrollToMenu()">View Menu</button>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <h2>Wide Range Of Deserts</h2>
+  <div class="menu-items">
+    <div class="menu-card fade-in">
+        <img src="img1/2.jpg" alt="">
+      <h3>Kaju Katli</h3>
+      <p>Rich creamy sauce with herbs</p>
+      <span>₹299</span>
+    </div>
+    <div class="menu-card fade-in">
+        <img src="img1/4.jpg" alt="">
+      <h3>Rasgulla</h3>
+      <p>Grilled patty with fresh veggies</p>
+      <span>₹199</span>
+    </div>
+    <div class="menu-card fade-in">
+        <img src="img1/6.jpg" alt="Italian Pasta">
+      <h3>Ras Malai</h3>
+      <p>Smoky & spicy Indian delight</p>
+      <span>₹249</span>
+    </div>
+    <div class="menu-card fade-in">
+        <img src="img1/ghevar.jpg" alt="">
+      <h3>Ghevar</h3>
+      <p>Rich creamy sauce with herbs</p>
+      <span>₹299</span>
+    </div>
+    <div class="menu-card fade-in">
+        <img src="img1/8.jpg" alt="">
+      <h3>Bappa's Modak</h3>
+      <p>Grilled patty with fresh veggies</p>
+      <span>₹199</span>
+    </div>
+    <div class="menu-card fade-in">
+        <img src="img1/7.jpg" alt="">
+      <h3>Gift Sweets</h3>
+      <p>Smoky & spicy Indian delight</p>
+      <span>₹249</span>
+    </div>
+   <div class="menu-card fade-in">
+        <img src="img1/3.jpg" alt="">
+      <h3>Gift Packs</h3>
+      <p>Rich creamy sauce with herbs</p>
+      <span>₹299</span>
+    </div>
+    <div class="menu-card fade-in">
+        <img src="img1/4.jpg" alt="Cheese Burger">
+      <h3>Rasgulla</h3>
+      <p>Grilled patty with fresh veggies</p>
+      <span>₹199</span>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!--
+<section class="menu" id="menu">
+  <h2>Our Special Menu</h2>
+
+  <div class="menu-items">
+    <div class="menu-card fade-in">
+      <h3>Italian Pasta</h3>
+      <p>Rich creamy sauce with herbs</p>
+      <span>₹299</span>
+      <button onclick="addToCart('Italian Pasta',299)">Add to Cart</button>
+    </div>
+
+    <div class="menu-card fade-in">
+      <h3>Cheese Burger</h3>
+      <p>Grilled patty with fresh veggies</p>
+      <span>₹199</span>
+      <button onclick="addToCart('Cheese Burger',199)">Add to Cart</button>
+    </div>
+
+    <div class="menu-card fade-in">
+      <h3>Paneer Tikka</h3>
+      <p>Smoky & spicy Indian delight</p>
+      <span>₹249</span>
+      <button onclick="addToCart('Paneer Tikka',249)">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="cart">
+    <h3>🛒 Your Order</h3>
+    <ul id="cartItems"></ul>
+    <h4>Total: ₹<span id="totalPrice">0</span></h4>
+    <button class="order-btn">Place Order</button>
+  </div>
+</section>
+-->
+
+<!-- About -->
+<<section class="testimonials" id="testimonials">
+  <h2>Customers' Reviews</h2>
+
+  <div class="testimonial-slider">
+    <div class="testimonial-track">
+
+      <div class="testimonial">
+        <p>“Amazing taste and great service. Best restaurant in Etawah!”</p>
+        <h4>— Rahul Sharma</h4>
+      </div>
+
+      <div class="testimonial">
+        <p>“Food quality is excellent and prices are reasonable.”</p>
+        <h4>— Neha Verma</h4>
+      </div>
+
+      <div class="testimonial">
+        <p>“Perfect place for family dinner. Loved the ambience.”</p>
+        <h4>— Amit Singh</h4>
+      </div>
+
+      <div class="testimonial">
+        <p>“Fast service and delicious food. Highly recommended !”</p>
+        <h4>— Pooja Mehta</h4>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="chefs" id="chefs">
+  <h2>Restaurant</h2>
+
+  <div class="chef-box">
+    <div class="chef-card">
+      <img src="img1/ghevar.jpg">
+      <h3>Chef Arjun</h3>
+      <p>Italian Cuisine Expert</p>
+    </div>
+
+    <div class="chef-card">
+      <img src="img1/3.jpg">
+      <h3>Chef Neha</h3>
+      <p>Indian Spice Specialist</p>
+    </div>
+
+    <div class="chef-card">
+      <img src="img1/4.jpg">
+      <h3>Chef David</h3>
+      <p>Continental Master</p>
+    </div>
+    <div class="chef-card">
+      <img src="img1/6.jpg">
+      <h3>Chef David</h3>
+      <p>Continental Master</p>
+    </div>
+    <div class="chef-card">
+      <img src="img1/7.jpg">
+      <h3>Chef Neha</h3>
+      <p>Indian Spice Specialist</p>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <h2>Hotel Rooms</h2>
+
+  <div class="gallery-grid">
+    <img src="img1/2.jpg">
+    <img src="img1/3.jpg">
+    <img src="img1/4.jpg">
+    <img src="img1/6.jpg">
+  </div>
+</section>
+
+
+
+<!-- Contact -->
+<section class="contact" id="contact">
+  <h2>Visit Us Today</h2>
+  <p>📍 Etawah | ☎ +91 98765 43210</p>
+  <button onclick="window.location.href='contact.html'">Contact Us</button>
+</section>
+
+<!--
+<section class="map-section">
+  <h2>Find Us</h2>
+
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps?q=New+Delhi+India&output=embed"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+-->
+
+<a
+  href="https://wa.me/918077801768?text=Hello%20SethChamparan,%20I%20want%20to%20order%20food"
+  class="whatsapp-float"
+  target="_blank"
+>
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- BRAND -->
+    <div class="footer-brand">
+
+      <!-- LOGO + NAME (SAME LINE) -->
+      <div class="footer-brand-top">
+        <img src="images/logo.png" alt="Anand Sweets Logo">
+        
+      </div>
+
+      <!-- TAGLINE -->
+      <p>Delicious food delivered with love.</p>
+
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-box">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#menu">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="index.html#testimonials">Reviews</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div class="footer-box">
+      <h3>Reach Us</h3>
+      <p>📍 Station Road, Shastri Chauraha, Etawah</p>
+      <p>☎ +91 98765 43210</p>
+      <p>✉ info@anandsweets</p>
+    </div>
+
+    <!-- Social -->
+    <div class="footer-box">
+      <h3>Follow Us</h3>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=61575716347777" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" title="Youtube"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Anand Sweets & Restaurant. All Rights Reserved.</p>
+  </div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
