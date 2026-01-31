@@ -65,7 +65,7 @@ header {
 /* TABLET */
 @media (max-width: 768px) {
   .brand img {
-    height: 45px;
+    height: 60px;
   }
 
   .brand-name {
@@ -752,3 +752,4 @@ header {
     font-size: 26px;
   }
 }
+
