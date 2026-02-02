@@ -150,17 +150,6 @@
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
-  /* ================= MOBILE MENU ================= */
-  const menuToggle = document.getElementById("menuToggle");
-  const navLinks = document.getElementById("navLinks");
-
-  if (menuToggle && navLinks) {
-    menuToggle.addEventListener("click", function () {
-      navLinks.classList.toggle("show");
-    });
-  }
-
-  /* ================= CONTACT FORM ================= */
   const contactForm = document.getElementById("contactForm");
 
   if (contactForm) {
@@ -189,30 +178,33 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
       }
 
-      const whatsappText =
-        "Hello Anand Sweets,%0A" +
-        "My Name: " + name + "%0A" +
-        "Address: " + address + "%0A" +
-        "Phone: " + phone + "%0A" +
-        "Message: " + message;
+      // ✅ Build WhatsApp message
+      const text = 
+        `Hello Anand Sweets,
+My Name: ${name}
+Address: ${address}
+Phone: ${phone}
+Message: ${message}`;
 
-      const whatsappURL =
-        "https://wa.me/919758710999?text=" + whatsappText;
+      // ✅ Encode text (important)
+      const encodedText = encodeURIComponent(text);
 
-      // 🔴 Replace with your WhatsApp number
-      window.open(whatsappURL, "_blank");
+      // ✅ Your WhatsApp number
+      const whatsappURL = `https://wa.me/919412837000?text=${encodedText}`;
 
       status.textContent = "Opening WhatsApp...";
       status.style.color = "green";
+
+      // ✅ Open WhatsApp (most reliable)
+      window.location.href = whatsappURL;
 
       contactForm.reset();
     });
   }
 
-});  // ✅ DO NOT REMOVE THIS LINE
-
-
+});
 </script>
 
 </body>
 </html>
+
