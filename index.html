@@ -28,7 +28,7 @@
         <li><a href="index.html#menu">Menu</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="index.html#testimonials">Reviews</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html">Enquiry</a></li>
     </ul>
   </nav>
 </header>
@@ -51,50 +51,60 @@
       <h3>Kaju Katli</h3>
       <p>Rich creamy sauce with herbs</p>
       <span>₹299</span>
+      
     </div>
     <div class="menu-card fade-in">
         <img src="img1/4.jpg" alt="">
       <h3>Rasgulla</h3>
       <p>Grilled patty with fresh veggies</p>
       <span>₹199</span>
+      
     </div>
     <div class="menu-card fade-in">
         <img src="img1/6.jpg" alt="Italian Pasta">
       <h3>Ras Malai</h3>
       <p>Smoky & spicy Indian delight</p>
       <span>₹249</span>
+      
     </div>
     <div class="menu-card fade-in">
         <img src="img1/ghevar.jpg" alt="">
       <h3>Ghevar</h3>
       <p>Rich creamy sauce with herbs</p>
       <span>₹299</span>
+      
     </div>
     <div class="menu-card fade-in">
         <img src="img1/8.jpg" alt="">
       <h3>Bappa's Modak</h3>
       <p>Grilled patty with fresh veggies</p>
       <span>₹199</span>
+      
     </div>
     <div class="menu-card fade-in">
         <img src="img1/7.jpg" alt="">
       <h3>Gift Sweets</h3>
       <p>Smoky & spicy Indian delight</p>
       <span>₹249</span>
+      
     </div>
    <div class="menu-card fade-in">
         <img src="img1/3.jpg" alt="">
       <h3>Gift Packs</h3>
       <p>Rich creamy sauce with herbs</p>
       <span>₹299</span>
+      
     </div>
     <div class="menu-card fade-in">
         <img src="img1/4.jpg" alt="Cheese Burger">
       <h3>Rasgulla</h3>
       <p>Grilled patty with fresh veggies</p>
       <span>₹199</span>
+      
     </div>
   </div>
+
+ 
 </section>
 
 
@@ -138,7 +148,7 @@
 -->
 
 <!-- About -->
-<<section class="testimonials" id="testimonials">
+<section class="testimonials" id="testimonials">
   <h2>Customers' Reviews</h2>
 
   <div class="testimonial-slider">
@@ -238,13 +248,7 @@
 </section>
 -->
 
-<a
-  href="https://wa.me/919412837000?text=Hello%20Anand%20Sweets,%20I%20want%20to%20order%20sweets"
-  class="whatsapp-float"
-  target="_blank"
->
-  <i class="fab fa-whatsapp"></i>
-</a>
+
 
 <footer class="footer">
   <div class="footer-container">
@@ -271,7 +275,7 @@
         <li><a href="index.html#menu">Menu</a></li>
         <li><a href="gallery.html">Gallery</a></li>
         <li><a href="index.html#testimonials">Reviews</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html">Enquiry</a></li>
       </ul>
     </div>
 
@@ -302,8 +306,115 @@
 </footer>
 
 
+<!-- Floating Button -->
+<div class="sweet-wa-btn" id="sweetWaBtn">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+  <span>Order Sweets</span>
+</div>
+
+<!-- Popup -->
+<div class="sweet-wa-popup" id="sweetWaPopup">
+  <div class="sweet-wa-box">
+    <span class="sweet-wa-close" id="sweetWaClose">×</span>
+
+    <h2>🍬 Order Sweets on WhatsApp</h2>
+
+    <div class="sweet-user-info">
+      <input type="text" id="sweetName" placeholder="Your Name">
+      <input type="text" id="sweetPhone" placeholder="Phone Number">
+      <textarea id="sweetAddress" placeholder="Delivery Address"></textarea>
+    </div>
+
+    <h3>Select Sweets</h3>
+
+    <div class="sweet-products-grid">
+
+      <!-- PRODUCT 1 -->
+      <div class="sweet-product">
+        <img src="img1/2.jpg">
+        <h4>Kaju Katli</h4>
+        <p>₹600 / Kg</p>
+
+        <div class="sweet-input-group">
+          <input type="number" min="0" step="50" placeholder="Grams" id="w0">
+          <input type="number" min="0" placeholder="Pieces" id="p0">
+        </div>
+
+        <div class="sweet-price">Price: ₹<span id="price0">0</span></div>
+      </div>
+
+      <!-- PRODUCT 2 -->
+      <div class="sweet-product">
+        <img src="img1/4.jpg">
+        <h4>Rasgulla</h4>
+        <p>₹700 / Kg</p>
+
+        <div class="sweet-input-group">
+          <input type="number" min="0" step="50" placeholder="Grams" id="w1">
+          <input type="number" min="0" placeholder="Pieces" id="p1">
+        </div>
+
+        <div class="sweet-price">Price: ₹<span id="price1">0</span></div>
+      </div>
+
+      <!-- PRODUCT 3 -->
+      <div class="sweet-product">
+        <img src="img1/6.jpg">
+        <h4>Ras Malai</h4>
+        <p>₹500 / Kg</p>
+
+        <div class="sweet-input-group">
+          <input type="number" min="0" step="50" placeholder="Grams" id="w2">
+          <input type="number" min="0" placeholder="Pieces" id="p2">
+        </div>
+
+        <div class="sweet-price">Price: ₹<span id="price2">0</span></div>
+      </div>
+
+      <!-- PRODUCT 4 -->
+      <div class="sweet-product">
+        <img src="img1/ghevar.jpg">
+        <h4>Ghevar</h4>
+        <p>₹450 / Kg</p>
+
+        <div class="sweet-input-group">
+          <input type="number" min="0" step="50" placeholder="Grams" id="w3">
+          <input type="number" min="0" placeholder="Pieces" id="p3">
+        </div>
+
+        <div class="sweet-price">Price: ₹<span id="price3">0</span></div>
+      </div>
+
+      <!-- PRODUCT 5 -->
+      <div class="sweet-product">
+        <img src="img1/8.jpg">
+        <h4>Modak</h4>
+        <p>₹500 / Kg</p>
+
+        <div class="sweet-input-group">
+          <input type="number" min="0" step="50" placeholder="Grams" id="w4">
+          <input type="number" min="0" placeholder="Pieces" id="p4">
+        </div>
+
+        <div class="sweet-price">Price: ₹<span id="price4">0</span></div>
+      </div>
+
+    </div>
+
+    <div class="sweet-total">
+      Total: ₹<span id="sweetTotal">0</span>
+    </div>
+
+    <button class="sweet-send-btn" id="sweetSendOrder">Send Order on WhatsApp</button>
+
+    <p id="sweetStatus"></p>
+  </div>
+</div>
+
+
+
+
+
 <script src="script.js"></script>
 </body>
 </html>
-
-
